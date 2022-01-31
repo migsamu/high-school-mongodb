@@ -14,7 +14,7 @@ public class Student {
     private String nif;
     private String name;
     private String surname;
-    private int courseId;
+    private int groupId;
     private List<Absence> absences;
 
     @JsonCreator
@@ -26,7 +26,7 @@ public class Student {
         this.nif = nif;
         this.name = name;
         this.surname = surname;
-        this.courseId = courseId;
+        this.groupId = courseId;
         this.absences = absences;
     }
 
@@ -55,11 +55,11 @@ public class Student {
     }
 
     public int getCourseId() {
-        return courseId;
+        return groupId;
     }
 
     public void setCourseId(int courseId) {
-        this.courseId = courseId;
+        this.groupId = courseId;
     }
 
     public List<Absence> getAbsences() {
@@ -75,12 +75,12 @@ public class Student {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         Student student = (Student) o;
-        return courseId == student.courseId && Objects.equals(nif, student.nif) && Objects.equals(name, student.name) && Objects.equals(surname, student.surname) && Objects.equals(absences, student.absences);
+        return groupId == student.groupId && Objects.equals(nif, student.nif) && Objects.equals(name, student.name) && Objects.equals(surname, student.surname) && Objects.equals(absences, student.absences);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(nif, name, surname, courseId, absences);
+        return Objects.hash(nif, name, surname, groupId, absences);
     }
 
     @Override
@@ -89,7 +89,7 @@ public class Student {
                 "nif='" + nif + '\'' +
                 ", name='" + name + '\'' +
                 ", surname='" + surname + '\'' +
-                ", courseId=" + courseId +
+                ", courseId=" + groupId +
                 ", absences=" + absences +
                 '}';
     }

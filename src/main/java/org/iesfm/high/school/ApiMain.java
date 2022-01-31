@@ -13,3 +13,53 @@ public class ApiMain {
 
     }
 }
+/*
+Escribe un programa que gestione la información de un instituto:
+
+- Grupos:
+
+o Id
+
+o Título(por ejemplo Desarrollo de Aplicaciones Multiplataforma)
+
+o Curso
+
+o Letra
+
+o Aula
+
+o Año (entero)
+
+- Alumnos:
+
+o Nif
+
+o Nombre
+
+o Apellidos
+
+o Id del curso
+
+o Faltas:
+
+§ Fecha
+
+§ Módulo
+
+Implementa lo siguientes endpoints:
+
+- Listar grupos
+
+- Listar alumnos de un grupo
+
+- Listar las faltas de un alumno
+
+- Añadir grupo
+
+- Añadir alumno a grupo
+
+- Eliminar alumno
+
+- Actualizar los datos de un alumno
+
+- **** Dado un nif, una fecha y un módulo, añadir una falta a un alumno*/

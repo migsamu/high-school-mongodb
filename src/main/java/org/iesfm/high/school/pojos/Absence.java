@@ -1,12 +1,14 @@
 package org.iesfm.high.school.pojos;
 
 import com.fasterxml.jackson.annotation.JsonCreator;
+import com.fasterxml.jackson.annotation.JsonFormat;
 import com.fasterxml.jackson.annotation.JsonProperty;
 
 import java.util.Date;
 import java.util.Objects;
 
 public class Absence {
+    @JsonFormat(pattern = "yyyy/MM/dd")
     private Date date;
     private String module;
 
